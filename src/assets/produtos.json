@@ -1,9 +1,9 @@
 [
-  {"id": 1, "nomeprodutos": "Sertralina"},
-  {"id": 2, "nomecategorias": "Dorflex"},
-  {"id": 3, "nomecategorias": "Hipoglós"},
-  {"id": 4, "nomecategorias": "Manteiga de cacau"},
-  {"id": 5, "nomecategorias": "Escova de dente"},
-  {"id": 6, "nomecategorias": "Insulina"},
-  {"id": 7, "nomecategorias": "Ibuprofeno"}
+  {"id": 1, "nomeprodutos": "Frauda"},
+  {"id": 2, "nomeprodutos": "Dorflex"},
+  {"id": 3, "nomeprodutos": "Hipoglós"},
+  {"id": 4, "nomeprodutos": "Manteiga de cacau"},
+  {"id": 5, "nomeprodutos": "Escova de dente"},
+  {"id": 6, "nomeprodutos": "Insulina"},
+  {"id": 7, "nomeprodutos": "Ibuprofeno"}
 ]
