@@ -3,7 +3,7 @@ export interface Categoria {
   nomecategorias: string;
 }
 
-export interface produto{
+export interface Produto{
   id: number;
   nomeproduto: string;
   // curso = new Curso();

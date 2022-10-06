@@ -7,6 +7,8 @@ import { ListacategoriasComponent } from './listacategorias/listacategorias.comp
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 @NgModule({
   declarations: [
     ListacategoriasComponent
@@ -14,8 +16,10 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     CommonModule,
     CategoriasRoutingModule,
+    CommonModule,
     MatTableModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
 
   ]
 })

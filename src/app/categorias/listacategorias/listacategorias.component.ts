@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Categoria } from '../../core/model';
+import { CategoriasService } from '../categorias.service';
 
 @Component({
   selector: 'app-listacategorias',
@@ -8,21 +10,13 @@ import { Categoria } from '../../core/model';
 })
 export class ListacategoriasComponent implements OnInit {
 
-  //LISTA-TABELA DE CATEGORIAS
-  categorias: Categoria[] = [
-    {id: 1, nomecategorias: 'Antibióticos'},
-    {id: 2, nomecategorias: 'Analgesicos'},
-    {id: 3, nomecategorias: 'Perfumaria'},
-    {id: 4, nomecategorias: 'Pomadas'},
-    {id: 5, nomecategorias: 'Produtos de Higiene'},
-    {id: 6, nomecategorias: 'Injeções e aplicações'},
-    {id: 7, nomecategorias: 'Berçário'},
-    ];
-
+  categorias: Observable<Categoria[]>;
   displayedColumns = ['id', 'nomecategorias'];
 
 
-  constructor() { }
+  constructor(private CategoriasService: CategoriasService) {
+    this.categorias = this.CategoriasService.list();
+  }
 
   ngOnInit(): void {
   }
